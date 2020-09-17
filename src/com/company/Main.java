@@ -22,6 +22,7 @@ public class Main {
         File reader = new File("person.json");
         Scanner scan = new Scanner(reader);
         Person person2 = gson.fromJson(scan.nextLine(), Person.class);
+        scan.close();
 
         System.out.println(person1.equals(person2));
 
