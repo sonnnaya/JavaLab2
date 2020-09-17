@@ -33,13 +33,13 @@ public final class Person
     }
 
     @Override
-    public boolean equals(Object object){
+    public boolean equals(Object object) {
         if (object == this)
             return true;
         if (object == null || object.getClass() != this.getClass())
             return false;
 
-        com.company.Person person = (com.company.Person) object;
+        Person person = (Person) object;
 
         if (person.age != age)
             return false;
