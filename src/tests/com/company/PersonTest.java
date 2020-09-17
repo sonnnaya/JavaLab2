@@ -6,7 +6,7 @@ import nl.jqno.equalsverifier.EqualsVerifier;
 class PersonTest {
 
     @Test
-    void equals_sameObjects_true() {
+    void equalsTest() {
         EqualsVerifier.forClass(Person.class).verify();
     }
 }

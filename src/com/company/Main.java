@@ -19,12 +19,11 @@ public class Main {
         writer.write(json);
         writer.close();
 
-        File reader = new File("person.json");
-        Scanner scan = new Scanner(reader);
+        File jsonFile = new File("person.json");
+        Scanner scan = new Scanner(jsonFile);
         Person person2 = gson.fromJson(scan.nextLine(), Person.class);
         scan.close();
 
         System.out.println(person1.equals(person2));
-
     }
 }
