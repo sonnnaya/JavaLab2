@@ -1,3 +1,4 @@
+// Program converts instance of class Person into .json and back.
 package com.company;
 
 import com.google.gson.Gson;
